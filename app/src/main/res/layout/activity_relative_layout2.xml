@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity2">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/ivImage"
+            android:src="@drawable/singapore"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivImage"
+            android:text="Singapore"
+            android:textSize="40sp"
+            android:id="@+id/tvSingapore"
+            android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/tvCamera"
+        android:layout_below="@id/tvSingapore"
+        android:textSize="20sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCamera"
+        android:hint="Leica M Typ 240"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/tvCamera"
+        android:layout_below="@id/tvSingapore"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textSize="22sp"
+        android:id="@+id/tvSetting"
+        android:layout_below="@id/tvCamera"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSetting"
+        android:layout_toRightOf="@id/tvSetting"
+        android:layout_below="@id/etCamera"
+        android:hint="f/4 16s ISO 200"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/etAboutSingapore"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/tvSetting"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter Something About Singapore" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDiscard"
+        android:text="Discard"
+        android:textSize="20dp"
+        android:layout_below="@id/etAboutSingapore"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpload"
+        android:text="Upload"
+        android:textSize="20dp"
+        android:layout_below="@id/etAboutSingapore"
+        android:layout_toRightOf="@id/btnDiscard"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

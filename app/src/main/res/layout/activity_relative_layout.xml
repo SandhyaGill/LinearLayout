@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".RelativeLayoutActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:text="+"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/btnDivide"/>
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdd"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/btnDivide"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMinus"
+        android:text="-"
+        android:textSize="30sp"
+        android:layout_below="@id/tvNumber"
+        android:layout_toRightOf="@id/btnDivide"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="30sp"
+        android:id="@+id/btnDivide"
+        android:layout_toleftOf="@id/tvNumber"
+        android:layout_below="@id/btnAdd"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/btnMultiply"
+        android:textSize="30sp"
+        android:layout_toRightOf="@id/tvNumber"
+        android:layout_below="@id/btnAdd"/>
+
+</RelativeLayout>
